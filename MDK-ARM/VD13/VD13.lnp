@@ -1,0 +1,17 @@
+--cpu=Cortex-M4.fp.sp
+"vd13\startup_stm32g474xx.o"
+"vd13\main.o"
+"vd13\stm32g4xx_it.o"
+"vd13\stm32g4xx_ll_utils.o"
+"vd13\stm32g4xx_ll_exti.o"
+"vd13\stm32g4xx_ll_gpio.o"
+"vd13\stm32g4xx_ll_spi.o"
+"vd13\stm32g4xx_ll_dma.o"
+"vd13\stm32g4xx_ll_pwr.o"
+"vd13\stm32g4xx_ll_usart.o"
+"vd13\stm32g4xx_ll_rcc.o"
+"vd13\system_stm32g4xx.o"
+--library_type=microlib --strict --scatter "VD13\VD13.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "VD13.map" -o VD13\VD13.axf
